@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.left{
+    height: 100vh;
+    width: 30vw;
+    background-size: contain;
+}
+
+.right{
+    height: 100vh;
+    width: 70vw;
+   /* background: red; */
+    text-align: center;
+}
+
+.column-container{
+    display:flex; 
+    flex-direction:column;
+}
+
+.information-section,
+.form-section,
+.login-section {
+    height: calc(100vh /3);
+}
+
+.information-text{
+    font-size: 2rem;
+    font-weight: 650;
+}
