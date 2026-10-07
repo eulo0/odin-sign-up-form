@@ -2,6 +2,27 @@ body{
     margin: 0;
 }
 
+button{
+    font-size: 1.75rem;
+    border-radius:0.5rem;
+    color: white;
+    margin: 0.2rem;
+    background-color: #596D48;
+}
+
+a{
+    color: #596D48; 
+}
+
+label{
+    display: block;
+    width: 15rem;
+}
+
+input{
+    width: 15rem;
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -10,8 +31,39 @@ body{
 .left{
     height: 100vh;
     width: 30vw;
-    background-size: contain;
+    position: relative;
 }
+
+.plant-image{
+    position: absolute;
+    height: 100vh;
+    width: 30vw;
+}
+
+.banner-background{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    height: 15vh;
+    width: 30vw;
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+    top: 12rem;
+
+}
+
+.banner-image{
+    height: 15vh;
+    width: 12vh;
+}
+
+.banner-text{
+    color: white;
+    font-size: 6rem;
+}
+
 
 .right{
     height: 100vh;
@@ -21,7 +73,7 @@ body{
 }
 
 .column-container{
-    display:flex; 
+    display: flex; 
     flex-direction:column;
 }
 
@@ -31,7 +83,39 @@ body{
     height: calc(100vh /3);
 }
 
+.information-section{
+    background: #F9FAFB;
+}
+
+.form-section{
+    display: flex;
+    background: #FFFFFF;
+}
+
+.login-section{
+    background: #F9FAFB;
+}
+
 .information-text{
     font-size: 2rem;
     font-weight: 650;
+    text-align: left;
+    align-items: flex-end;
+}
+
+.login-haveAccount{
+    font-size: 1.2rem;
+}
+
+.form-container {
+    /* 
+    display: flex;
+    justify-content: center;
+    background: red;
+    gap: 100px;
+    */ 
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
