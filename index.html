@@ -29,39 +29,49 @@
                     </div>
                 </div>
                 <div class="form-section">
-                    <div class="container2"> 
-                    <p class="information-text">Let's do this!</p>
-                    <form action="example.com/path" method="post">
-                        <div class = form-container> 
-                            <label for="first_name" class="label-text">First Name</label>
-                            <input type="text" id="first_name">    
+                    <div class="container2b"> 
+                    
+                    <p class="information-text" style="margin-bottom:-0.1rem;">Let's do this!</p>
+                    
+                    <form id="info" method="post" style="display:flex; width:100%;">
+                        <div class = container-form-left>
+                        
+                            <div class = form-container> 
+                                <label for="first_name" class="label-text">First Name</label>
+                                <input type="text" id="first_name">   
+                            </div>
+                            <div class = form-container> 
+                                <label for="Email" class="label-text">Email</label>
+                                <input type="email" id="email">
+                            </div>
+                            <div class = form-container> 
+                                <label for="password" class="label-text" minLength="8">Password</label>
+                                <input type="password" id="password">
+                            </div> 
                         </div>
-                        <div class = form-container> 
-                            <label for="last_name" class="label-text">Last Name</label>
-                            <input type="text" id="last_name">
-                        </div>
-                        <div class = form-container> 
-                            <label for="Email">Email</label>
-                            <input type="email" id="email">
-                        </div>
-                        <div class = form-container> 
-                            <label for="phone_number">Phone Number</label>
-                            <input type="number" id="phone_number">
-                        </div>
-                        <div class = form-container> 
-                            <label for="password">Password</label>
-                            <input type="password" id="password">
-                        </div>
-                        <div class = form-container> 
-                            <label for="password_confirm">Confirm Password</label>
-                            <input type="password" id="password_confirm">
+                        <div class= "container-form-right">
+
+                         
+                            <div class = form-container> 
+                                <label for="last_name" class="label-text">Last Name</label>
+                                <input type="text" id="last_name">
+                            </div>
+                            <div class = form-container> 
+                                <label for="phone_number" class="label-text">Phone Number</label>
+                                <input type="text" id="phone_number">
+                            </div>
+                            <div class = form-container> 
+                                <label for="password_confirm" class="label-text" minLength="8">Confirm Password</label>
+                                <input type="password" id="password_confirm">
+                            </div>
+                        
                         </div>
                     </form>
                     </div>
                 </div>
                 <div class="login-section">
                     <div class="container2">
-                        <button> Create Account </button>
+                        <button type="submit" form="info"> Create Account </button>
                         <p class="login-haveAccount">Already have an account? <a>Log in</a></p>
                     </div>
                 </div>
